@@ -8,3 +8,4 @@
 ## ✅ Лабораторная работа 4. Классы
 ## ✅ Мини проект (ООП)
 ## ✅ дз 07.03
+## ✅ Лабораторная 5: https://docs.google.com/document/d/1LrRzm5i4_kpkSeJc2JMhQFxlATVTuZ3LkrpYwUQdYvU/edit?usp=sharing
