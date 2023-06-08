@@ -1,0 +1,17 @@
+Index: readme.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Лабораторные работы по дисциплине \"Разработка профессиональных приложений\".\nКаждая ветка в репозитории - отдельная лабораторная работа.\n\n## Вариант 9\n## ✅ Лабораторная работа 1. Обработка списков\n## ✅ Лабораторная работа 2. Двумерные структуры данных.\n## ✅ Лабораторная работа 3. Файлы и словари\n## ✅ Лабораторная работа 4. Классы\n## ✅ Мини проект (ООП)\n## ✅ дз 07.03\n## ✅ Лабораторная 5: https://docs.google.com/document/d/1LrRzm5i4_kpkSeJc2JMhQFxlATVTuZ3LkrpYwUQdYvU/edit?usp=sharing
+===================================================================
+diff --git a/readme.md b/readme.md
+--- a/readme.md	
++++ b/readme.md	
+@@ -8,4 +8,5 @@
+ ## ✅ Лабораторная работа 4. Классы
+ ## ✅ Мини проект (ООП)
+ ## ✅ дз 07.03
+-## ✅ Лабораторная 5: https://docs.google.com/document/d/1LrRzm5i4_kpkSeJc2JMhQFxlATVTuZ3LkrpYwUQdYvU/edit?usp=sharing
+\ No newline at end of file
++## ✅ Лабораторная 5: https://docs.google.com/document/d/1LrRzm5i4_kpkSeJc2JMhQFxlATVTuZ3LkrpYwUQdYvU/edit?usp=sharing
++## ✅ Лабораторная 6
+\ No newline at end of file

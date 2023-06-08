@@ -1,0 +1,17 @@
+Index: append_data_in_table.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import csv\ndef add_new_date():\n    writer = csv.writer(open(\"data.csv\", \"w\"))\n    writer.writerow([\"number\", \"data\", \"fio\", \"grant\", \"destination\"])\n    writer.writerow([\"1\", \"15.02.2023\", \"Petrov Andrey Nikolayevich\", \"2400\", \"work\"])\n    writer.writerow([\"2\", \"16.02.2023\", \"Nikolaeva Annd Dmitievna\", \"6000\", \"pool\"])\n    writer.writerow([\"3\", \"17.02.2023\", \"Denisov Aleksandr Petrovich\", \"1800\", \"profcom\"])\n    writer.writerow([\"4\", \"18.02.2023\", \"Sofronova Arina Alekseevna\", \"0\", \"work\"])\n    writer.writerow([\"5\", \"19.02.2023\", \"Ivanov Ivan Ivanovich\", \"9000\", \"pool\"])\n    while True:\n        data_flag = input(\"Вы хотите добавить новые данные? y/n \")\n        if data_flag == \"y\":\n            number = int(input(\"Введите номер \"))\n            data = input(\"Введите дату \")\n            fio = input(\"Введите ФИО \")\n            grant = input(\"Введите стипендию \")\n            destination = input(\"Укажите, куда берете справку \")\n            writer.writerow([number, data, fio, grant, destination])\n        else:\n            break\n
+===================================================================
+diff --git a/append_data_in_table.py b/append_data_in_table.py
+--- a/append_data_in_table.py	
++++ b/append_data_in_table.py	
+@@ -10,7 +10,7 @@
+     while True:
+         data_flag = input("Вы хотите добавить новые данные? y/n ")
+         if data_flag == "y":
+-            number = int(input("Введите номер "))
++            number = int(input("Введите номер "))g
+             data = input("Введите дату ")
+             fio = input("Введите ФИО ")
+             grant = input("Введите стипендию ")
