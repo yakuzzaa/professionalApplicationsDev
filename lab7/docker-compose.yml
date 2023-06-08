@@ -1,0 +1,14 @@
+version: "3.10"
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: lab7
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    ports:
+      - "8000:8000"
