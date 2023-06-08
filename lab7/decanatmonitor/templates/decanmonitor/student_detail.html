@@ -1,0 +1,7 @@
+<h1>Детали студента</h1>
+
+<p>Имя: {{ student.name }}</p>
+<p>Группа: {{ student.group }}</p>
+
+<a href="{% url 'student_update' pk=student.pk %}">Редактировать</a>
+<a href="{% url 'student_delete' pk=student.pk %}">Удалить</a>
