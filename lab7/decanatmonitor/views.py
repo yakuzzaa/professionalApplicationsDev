@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render
 
 # Create your views here.
@@ -29,6 +30,9 @@ def student_create(request):
 
 def student_update(request, pk):
     student = get_object_or_404(Student, pk=pk)
+    if not request.user.is_superuser:
+        messages.add_message(request, messages.INFO, "You dont have Rights to update students")
+        return redirect("student_list")
     if request.method == 'POST':
         form = StudentForm(request.POST, instance=student)
         if form.is_valid():
@@ -41,6 +45,9 @@ def student_update(request, pk):
 
 def student_delete(request, pk):
     student = get_object_or_404(Student, pk=pk)
+    if not request.user.is_superuser:
+        messages.add_message(request, messages.INFO, "You dont have Rights to delete students")
+        return redirect("student_list")
     if request.method == 'POST':
         student.delete()
         return redirect('student_list')
