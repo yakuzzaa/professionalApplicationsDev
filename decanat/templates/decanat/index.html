@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"Веб-интерфейс для взаимодействия с базой данных"</title>
+</head>
+<body>
+    <h1>База данных</h1>
+    <div>
+        {% for i in spravki %}
+            <p>{{ i.fio }}. Стипендия: {{ i.grant }}. Назначение справки: {{ i.destination }}</p> <br>
+
+        {% endfor %}
+        <h2> Добавить поле:</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ f }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
